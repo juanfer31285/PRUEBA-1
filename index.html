@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Gran CruxiPollo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #d62828;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #f77f00;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #d62828;
+    }
+    .hero {
+      background-image: url('https://th.bing.com/th/id/OIP.-5tpL2YyY7p7gC0UTBN5IAHaD4?rs=1&pid=ImgDetMain');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      color: #d62828;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid #ccc;
+    }
+    .menu-gallery {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .menu-gallery img {
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #d62828;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a61e1e;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .about-img {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>El Gran CruxiPollo</h1>
+  <p>¡Donde el pollo cruje más sabroso que nunca!</p>
+</header>
+
+<nav>
+  <a href="#menu">Menú</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero"></div>
+
+<section id="menu" class="section">
+  <h2>Menú</h2>
+  <div class="menu-item"><span>Combo Clásico</span> $19.900</div>
+  <div class="menu-item"><span>Alitas BBQ (8 uds)</span> $15.900</div>
+  <div class="menu-item"><span>Pollo Broaster (2 presas + papas)</span> $14.900</div>
+  <div class="menu-item"><span>Combo Familiar (10 presas + gaseosa)</span> $44.900</div>
+
+  <div class="menu-gallery">
+    <img src="https://th.bing.com/th/id/OIP.Nl2RIRHMRXyIyoHrmVCwuwHaE7?w=509&h=339&rs=1&pid=ImgDetMain" alt="Combo pollo frito">
+    <img src="https://th.bing.com/th/id/OIP.NiC2qMZrxTEAtWWbHlYqCAHaE7?w=626&h=417&rs=1&pid=ImgDetMain" alt="Delicioso pollo crocante">
+  </div>
+</section>
+
+<section id="nosotros" class="section">
+  <h2>Sobre Nosotros</h2>
+  <p>En El Gran CruxiPollo nos especializamos en ofrecer pollo frito crujiente, sabroso y recién hecho. Nuestra receta es única y está hecha con amor. ¡Ven y prueba por qué somos los favoritos del barrio!</p>
+  <img class="about-img" src="https://th.bing.com/th/id/OIP.NiC2qMZrxTEAtWWbHlYqCAHaE7?w=626&h=417&rs=1&pid=ImgDetMain" alt="Nuestro producto estrella">
+</section>
+
+<section id="contacto" class="section">
+  <h2>Contáctanos</h2>
+  <form action="mailto:tuemail@correo.com" method="POST" enctype="text/plain">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 El Gran CruxiPollo. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
